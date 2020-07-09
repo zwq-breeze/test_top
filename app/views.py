@@ -30,6 +30,11 @@ def up_grade(request):
 
 
 def get_top(request):
+    """
+    获取排行榜单
+    :param request:
+    :return:
+    """
     if request.method == "GET":
         start = request.GET.get('start')
         end = request.GET.get('end')
